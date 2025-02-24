@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
         stage('Success') {
             steps {
-                echo 'Build Success!'
+                echo 'Build and package successful!'
             }
         }
     }
