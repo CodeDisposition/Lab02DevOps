@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: '<https://github.com/CodeDisposition/Lab02DevOps>' // Replace with your GitHub repo URL
+                git branch: 'master', url: 'https://github.com/CodeDisposition/Lab02DevOps'
             }
         }
         stage('Build') {
